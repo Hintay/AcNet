@@ -28,7 +28,7 @@ int main(int argc, char **argv, char **envp) {
 	if(argc > 2)
 	{
 		printf("usage: %s com.example.bundleid\n", argv[0]);
-		return -1;
+		return 2;
 	} else if(argc == 1)
 	{
 		bypassDataPermissions(@"devs.nactro.achelper");
@@ -39,7 +39,7 @@ int main(int argc, char **argv, char **envp) {
 			if(contentApp == nil)
 			{
 				printf("Cannot found bundle id: %s\n", argv[1]);
-				return -1;
+				return 1;
 			} else
 				bypassDataPermissions(bundleId);
 		}
