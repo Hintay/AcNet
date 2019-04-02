@@ -1,0 +1,10 @@
+Package: com.nactro.acnet
+Name: acnet
+Depends: 
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: Fix the network permissions for app you want.
+Maintainer: Nactro
+Author: Nactro
+Section: System
+Tag: role::hacker
